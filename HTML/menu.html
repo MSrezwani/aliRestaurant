@@ -1,0 +1,353 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رستورانت ممد</title>
+    <link rel="stylesheet" href="../Assets/Styles/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/Styles/css/style.css">
+    <link rel="stylesheet" href="../Assets/Styles/fontawesome/css/all.min.css">
+</head>
+
+<body dir="rtl">
+    <div class="mainBackground">
+        <!-- لایه تیره -->
+        <div class="overlay"></div>
+
+        <!-- محتوای صفحه منو -->
+        <div class="content container">
+            <!-- start navbar -->
+            <div class="nav d-flex align-items-center pt-3 justify-content-between mb-5">
+                <div class="logo d-flex wrap-nowrap align-items-center">
+                    <i class="fas fa-utensils text-yellow text-big logo-icon"></i>
+                    <h2 class="logo-title text-yellow mr-3">علی رستوران</h2>
+                    <div class="navbar list-group d-flex flex-row mr-5">
+                        <a href="index.html" class="list-group-item bg-none border-0 text-white mx-3">خانه</a>
+                        <a href="menu.html" class="list-group-item bg-none border-0 text-white mx-3 selected">منو
+                            رستوران</a>
+                        <a href="about-us.html" class="list-group-item bg-none border-0 text-white mx-3">درباره‌ی ما</a>
+                        <a href="contact-us.html" class="list-group-item bg-none border-0 text-white mx-3">ارتباط با
+                            ما</a>
+                    </div>
+                </div>
+                <div class="coffeShop">
+                    <button class="coffeShopButton btn btn-yellow py-2 px-5">کافی‌شاپ</button>
+                </div>
+            </div>
+            <!-- end navbar -->
+            <!-- start menu content -->
+            <div class="Menu d-flex text-white flex-column mt-7 text-right">
+                <!-- start menu title -->
+                <div
+                    class="MenuTop d-flex w-100 h-25 text-center flex-column align-items-center justify-content-center">
+                    <div class="MenuTitleTop">
+                        <h4 class="text-yellow MenuTitleTopH4">منوی رستوران</h4>
+                        <p class="MenuTitleTopP">معروف‌ترین غذاهای علی رستوران</p>
+                    </div>
+                    <div class="MenuTitles d-flex w-100 flex-nowrap justify-content-center">
+                        <div class="MenuTitleBreakfast MenuTitle d-flex flex-nowrap align-items-center justify-content-center mx-3 selectedMenu"
+                            onmousedown="selectedMenu(this)" onmouseenter="selectedMenuMouseIn(this)" onmouseleave="selectedMenuMouseOut(this)">
+                            <i class="BreakfastIcon fa fa-coffee fa-2x ml-2 text-yellow"></i>
+                            <h3 class="BreakfastTitle MenuTitleContent mt-2 text-blue">معروف‌ترین <br>صبحانه‌ها</h3>
+                        </div>
+                        <div class="MenuTitleLaunch MenuTitle d-flex flex-nowrap align-items-center justify-content-center mx-3"
+                            onmousedown="selectedMenu(this)" onmouseenter="selectedMenuMouseIn(this)" onmouseleave="selectedMenuMouseOut(this)">
+                            <i class="LaunchIcon fa fa-hamburger fa-2x ml-2 text-yellow"></i>
+                            <h3 class="LaunchTitle MenuTitleContent mt-2 text-blue">ناهارهای<br>مخصوص</h3>
+                        </div>
+                        <div class="MenuTitleLaunch MenuTitle d-flex flex-nowrap align-items-center justify-content-center mx-3"
+                            onmousedown="selectedMenu(this)" onmouseenter="selectedMenuMouseIn(this)" onmouseleave="selectedMenuMouseOut(this)">
+                            <i class="LaunchIcon fa fa-utensils  fa-2x  ml-2 text-yellow"></i>
+                            <h3 class="LaunchTitle MenuTitleContent mt-2 text-blue">معروف‌ترین <br>صبحانه‌ها</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- end menu title -->
+                <!-- start menu food -->
+                <div class="w-100 MenuFood text-center align-items-center mt-7 justify-content-center text-white">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-2 pb-3">
+                            <div class="card MenuFoodItem d-flex flex-column  border-yellow text-right justify-content-centers align-items-center"
+                                onmouseenter="MenuFoodItemIn(this)" onmouseleave="MenuFoodItemOut(this)"
+                                onmousedown="MenuFoodItemDetail(this)">
+                                <img src="../Assets/Img/restaurant/mainBackground.jpg"
+                                    class="card-img-top MenuFoodItemImage" alt="">
+                                <div class="card-body w-100">
+                                    <h5 class="card-title">اسم غذا</h5>
+                                    <p class="card-text"></p>
+                                    <hr class="bg-yellow">
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemMoney h-100 d-flex align-items-center">
+                                            قیمت:</h4>
+                                        <i class="fas fa-dollar-sign h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1">2000</h6>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row " style="height: 40px;">
+                                        <h4
+                                            class="ml-2 text-yellow font-dast MenuFoodItemThings h-100 d-flex align-items-center">
+                                            مواد اولیه:</h4>
+                                        <i class="fas fa-shopping-cart h-100 d-flex align-items-center"></i>
+                                        <h6 class="h-100 d-flex align-items-center mr-1 MenuFoodItemMaterial">پنیر،
+                                            قارچ، گوشت، زیتون و</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end menu food -->
+            </div>
+            <!-- end menu content -->
+        </div>
+        <!-- اتمام محتوای صفحه من -->
+    </div>
+</body>
+
+<script>
+
+    function MenuFoodItemIn(element) {
+        element.classList.add('selectedMenuItem');
+
+    }
+
+
+    function MenuFoodItemOut(element) {
+        element.classList.remove('selectedMenuItem');
+    }
+
+    function MenuFoodItemDetail(element) {
+        console.log(element);
+
+    }
+
+    window.addEventListener('resize', function () {
+        const image = document.querySelector('.MenuFoodItemImage');
+        if (image.offsetWidth === image.parentElement.offsetWidth) {
+            image.style.height = 'auto';
+        } else {
+            image.style.height = '10rem'; // مقدار پیش‌فرض
+        }
+    });
+    function selectedMenu(element) {
+        // بررسی تعداد عناصر دارای کلاس 'selectedMenu'
+        const selectedElements = document.querySelectorAll('.selectedMenu');
+
+        // اگر بیش از یک عنصر دارای این کلاس است یا عنصر جاری آن را ندارد، اجرا شود
+        if (selectedElements.length > 1 || !element.classList.contains('selectedMenu')) {
+            // حذف کلاس از تمامی عناصر
+            selectedElements.forEach(function (el) {
+                el.classList.remove('selectedMenu');
+            });
+
+            // افزودن کلاس به عنصر فعلی
+            element.classList.add('selectedMenu');
+        }
+    }
+
+    function selectedMenuMouseIn(element){
+        element.style.cursor = "pointer";
+    }
+
+
+</script>
+
+
+</html>

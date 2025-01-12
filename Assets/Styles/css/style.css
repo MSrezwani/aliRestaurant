@@ -1,0 +1,291 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: dubai;
+}
+
+:root {
+	--darkblue: #0f172b;
+	--verydarkblue: #040913;
+	--yellow: #fea116;
+	--darkyellow: #c67d0f;
+	--white: #ffffff;
+}
+
+.mainBackground {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* ارتفاع کل صفحه */
+	background-image: url('../../Img/restaurant/mainBackground.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0f172b;
+	opacity: 0.95;
+	z-index: 1;
+}
+
+.content {
+	position: relative;
+	z-index: 2;
+	/* اطمینان از اینکه محتوا بالای لایه تیره است */
+}
+
+
+
+/* start navbar */
+
+/* start logo */
+.text-yellow {
+	color: var(--yellow);
+}
+
+.text-big {
+	font-size: 2rem;
+}
+
+.logo-icon {
+	transform: scaleX(-1);
+}
+
+.logo-title {
+	font-family: Digi Craft Ultra Black;
+}
+
+/* end logo */
+
+/* start nav */
+
+
+.bg-none {
+	background-color: transparent !important;
+}
+
+.bg-yellow {
+	background-color: var(--yellow) !important;
+
+}
+
+.list-group-item {
+	font-family: Digi Nofar Bold;
+	/* font-family: Digi Maryam; */
+	/* font-family: Digi An Bold; */
+	font-size: 1.5rem;
+	transition: all ease-in-out 0.3s;
+	position: relative;
+}
+
+.list-group-item::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 0%;
+	right: 0;
+	height: 2px;
+	background-color: var(--yellow);
+	margin-top: 10px;
+	transition: all ease-in-out .4s;
+}
+
+.list-group-item:hover {
+	text-decoration: none;
+	color: var(--yellow) !important;
+}
+
+.list-group-item:hover::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--yellow);
+	margin-top: 10px;
+}
+
+.coffeShopButton {
+	font-family: Lalezar;
+	font-size: 1.3rem;
+}
+
+.selected {
+	text-decoration: none;
+	position: relative;
+	color: var(--yellow) !important;
+}
+
+.selected::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--yellow) !important;
+	margin-top: 10px;
+}
+
+/* end nav */
+
+/* start coffeeShop */
+.btn-yellow {
+	background-color: #8a5a40 !important;
+	color: var(--white);
+	transition: all ease-in-out .3s !important;
+}
+
+.btn-yellow:hover {
+	background-color: var(--darkyellow) !important;
+	color: var(--white);
+	transform: scale(1.1);
+}
+
+/* end coffeeShop */
+
+/* end navbar */
+
+/* start Home */
+
+.mt-10 {
+	margin-top: 100px;
+}
+
+.hero-header {
+	animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.homeTitr {
+	font-family: Digi Craft Ultra Black;
+}
+
+.homeContent {
+	/* font-family: Digi Nofar Bold; */
+	/* font-family: Digi Maryam; */
+	font-family: Digi An Bold;
+	font-size: 1.7rem;
+	word-spacing: 5px;
+}
+
+/* end Home */
+
+
+/* start Menu */
+
+.MenuTitleContent {
+	font-size: 1rem;
+}
+
+.text-blue {
+	color: var(--white);
+}
+
+.selectedMenu {
+	padding: 10px;
+	border-bottom: 2px solid var(--yellow);
+}
+
+.MenuTitleTopH4 {
+	font-family: Digi Craft Ultra Black;
+	font-size: 1.8rem;
+}
+
+.MenuTitleTopP {
+	font-family: Digi Nofar Bold;
+	/* font-family: Digi Maryam; */
+	/* font-family: Digi An Bold; */
+	font-size: 1.5rem;
+}
+
+.mt-7 {
+	margin-top: 70px;
+}
+
+/* start menu food */
+
+.MenuFoodItemImage {
+	height: 100%;
+}
+
+.border-yellow {
+	border: 1px solid var(--yellow);
+	background-color: transparent !important;
+}
+
+.MenuFoodItem {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.font-dast {
+	/* font-family: Digi Nofar Bold; */
+	/* font-family: Digi An Bold; */
+	font-family: Digi Maryam;
+}
+
+.MenuFoodItemMoney {
+	font-size: 2rem;
+}
+
+.MenuFoodItemThings{
+	text-wrap:nowrap;
+}
+
+.align-items-center{
+	align-items: center!important;
+}
+
+.MenuFoodItemMoney,
+.fas,
+.MenuFoodItem div div h6 {
+    height: 100%; /* ارتفاع یکنواخت */
+    display: flex;
+    align-items: center; /* وسط‌چین شدن محتوا */
+}
+
+.MenuFoodItem div div h4, h6 {
+    margin: 0; /* حذف فاصله پیش‌فرض */
+    line-height: 40px; /* برابر با ارتفاع کانتینر برای عمودی وسط‌چین */
+}
+
+.MenuFoodItemMaterial {
+    white-space: nowrap; /* جلوگیری از شکست خط */
+    overflow: hidden; /* مخفی کردن محتوای اضافی */
+    text-overflow: ellipsis; /* نمایش ... در انتها */
+}
+
+.MenuFoodItem{
+	transition: all ease-in-out .2s;
+}
+
+.selectedMenuItem{
+	background-color: var(--yellow)!important;
+	opacity: 0.9;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.selectedMenuItem div div h4{
+	color: var(--darkblue);
+}
+.MenuFoodItemImage {
+    height: 10rem;
+    /* width: auto; */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* end menu food */
+
+/* end Menu */
